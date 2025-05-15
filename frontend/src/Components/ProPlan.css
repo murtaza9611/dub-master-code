@@ -1,0 +1,112 @@
+/* ProPlan.css */
+
+.pro-plan-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  margin-top: 60px; /* Adjust depending on your Navbar height */
+}
+
+.pro-plan-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pro-plan-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: black; /* Purple color for Pro Plan */
+}
+
+.pro-plan-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.pro-plan-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.pro-plan-details {
+  width: 60%;
+}
+
+.pro-plan-details h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: black; /* Purple color for section heading */
+}
+
+.pro-plan-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pro-plan-details li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.pro-plan-price-section {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pro-plan-price-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.pro-plan-price-card h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.price-text {
+  font-size: 30px;
+  color: #0e0d0d;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.get-pro-plan-button {
+  background-color: black; /* Purple background for Pro Plan button */
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.get-pro-plan-button:hover {
+  background-color: #e6e2eb; /* Darker purple on hover */
+}
+
+@media (max-width: 768px) {
+  .pro-plan-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pro-plan-details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .pro-plan-price-section {
+    width: 100%;
+  }
+}

@@ -1,0 +1,196 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Reem Kufi", sans-serif !important;
+  }
+  
+  /* Wrapper for signup page */
+  .signup-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #333; /* Dark gray background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: -1rem;
+  }
+  
+  /* Header with Logo inside the signup form */
+  .signup-page-container .form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .signup-page-container .form-logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  /* Heading inside the form */
+  .signup-page-container .primary-heading {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1rem;
+  }
+  
+  /* Styling the input fields */
+  .signup-page-container .signup-input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #555; /* Dark gray background for input fields */
+    font-size: 1rem;
+    color: white; /* White text color for input fields */
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focus state for inputs */
+  .signup-page-container .signup-input:focus {
+    border-color: #040505;
+    outline: none;
+  }
+  
+  /* Button styling for signup */
+  .signup-page-container .signup-submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #000; /* Black background for the signup button */
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button hover effect for signup */
+  .signup-page-container .signup-submit-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Login button */
+  .signup-page-container .login-btn {
+    padding: 14px;
+    background-color: #f1eeec;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .signup-page-container .login-btn:hover {
+    background-color: #ebeef3;
+  }
+  
+  /* Link text for login */
+  .signup-page-container .login-link p {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  .signup-page-container .login-link a {
+    color: #0a0a09;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Add space between form elements */
+  .signup-page-container .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -50px;
+  }
+  
+  /* Styling the home image section */
+  /* Wrapper for signup page */
+  .signup-banner-container {
+    position: relative;
+    display: flex;
+    padding-top: 3rem;
+  }
+  
+  /* Container for the banner image */
+  .signup-bannerImage-container {
+    position: absolute;
+    top: -110px;
+    right: -170px;
+    z-index: -2;
+    max-width: 700px;
+  }
+  
+  /* Styling the signup form image */
+  .signup-image-section {
+    max-width: 600px;
+    margin-left: 180px;
+    flex: 1;
+    /* z-index: 20; */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .signup-page-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .signup-page-container .form-logo {
+      max-width: 80px;
+    }
+  
+    .signup-page-container .primary-heading {
+      font-size: 1.2rem;
+    }
+  
+    .signup-page-container .signup-submit-btn {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    .signup-page-container .login-btn {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    .signup-bannerImage-container {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .signup-bannerImage-container {
+      max-width: 600px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .signup-bannerImage-container {
+      max-width: 450px;
+    }
+  
+    .signup-banner-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .signup-image-section {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  

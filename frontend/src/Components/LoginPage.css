@@ -1,0 +1,204 @@
+General Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+
+/* Wrapper for login page */
+.login-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #333; /* Dark gray background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-top: -1rem;
+}
+
+/* Header with Logo inside the login form */
+.login-page-container .form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-page-container .form-logo {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Heading inside the form */
+.login-page-container .primary-heading {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+/* Styling the input fields */
+.login-page-container .login-input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #555; /* Dark gray background for input fields */
+  font-size: 1rem;
+  color: white; /* White text color for input fields */
+  transition: border-color 0.3s ease;
+}
+
+/* Focus state for inputs */
+.login-page-container .login-input:focus {
+  border-color: #040505;
+  outline: none;
+}
+
+/* Button styling for login */
+.login-page-container .login-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #000; /* Black background for the login button */
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect for login */
+.login-page-container .login-submit-btn:hover {
+  background-color: #444;
+}
+
+/* Sign up button */
+.login-page-container .signup-btn {
+  padding: 14px;
+  background-color: #f1eeec;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-page-container .signup-btn:hover {
+  background-color: #ebeef3;
+}
+
+/* Link text for sign up */
+.login-page-container .signup-link p {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.login-page-container .signup-link a {
+  color: #0a0a09;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Add space between form elements */
+.login-page-container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -50px;
+}
+
+/* Styling the home image section */
+/* Wrapper for login page */
+.login-banner-container {
+  position: relative;
+  display: flex;
+  padding-top: 3rem;
+  
+}
+
+/* Container for the banner image */
+.login-bannerImage-container {
+  position: absolute;
+  top: -110px;
+  right: -170px;
+  z-index: -2;
+  max-width: 700px;
+
+}
+
+/* Styling the login form image */
+.login-image-section {
+  max-width: 600px;
+  margin-left: 180px;
+  flex:1;
+  /* z-index: 20; */
+}
+
+/* Styling the background image */
+/* .login-banner-container img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  right: -130px;
+  z-index: 0; /* Keeps the background image below the logo */
+/* } */
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .login-page-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-page-container .form-logo {
+    max-width: 80px;
+  }
+
+  .login-page-container .primary-heading {
+    font-size: 1.2rem;
+  }
+
+  .login-page-container .login-submit-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .login-page-container .signup-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+  .login-bannerImage-container {
+    display: none;
+}
+}
+@media (max-width: 1000px) {
+   .login-bannerImage-container {
+    max-width: 600px;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .login-bannerImage-container {
+    max-width: 450px;
+  }
+  .login-banner-container{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-image-section {
+    width: 100%;
+    max-width: 400px;
+  }
+}

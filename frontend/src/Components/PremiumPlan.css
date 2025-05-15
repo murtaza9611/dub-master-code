@@ -1,0 +1,110 @@
+/* PremiumPlan.css */
+
+.premium-plan-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  margin-top: 60px; /* Adjust depending on your Navbar height */
+}
+
+.premium-plan-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.premium-plan-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.premium-plan-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.premium-plan-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.premium-plan-details {
+  width: 60%;
+}
+
+.premium-plan-details h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.premium-plan-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.premium-plan-details li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.premium-plan-price-section {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.premium-plan-price-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.premium-plan-price-card h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.price-text {
+  font-size: 30px;
+  color: #0e0d0d;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.add-to-cart-button {
+  background-color: #111010;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-to-cart-button:hover {
+  background-color: #e7dfd9;
+}
+
+@media (max-width: 768px) {
+  .premium-plan-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .premium-plan-details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .premium-plan-price-section {
+    width: 100%;
+  }
+}

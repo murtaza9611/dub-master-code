@@ -1,0 +1,111 @@
+/* FreePlan.css */
+
+.free-plan-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 60px; /* Adjust depending on your Navbar height */
+  }
+  
+  .free-plan-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .free-plan-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .free-plan-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .free-plan-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .free-plan-details {
+    width: 60%;
+  }
+  
+  .free-plan-details h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .free-plan-details ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .free-plan-details li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .free-plan-price-section {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .free-plan-price-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .free-plan-price-card h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .price-text {
+    font-size: 30px;
+    color: #0e0d0d;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .get-free-plan-button {
+    background-color: #111010;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .get-free-plan-button:hover {
+    background-color: #e7dcd4;
+  }
+  
+  @media (max-width: 768px) {
+    .free-plan-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .free-plan-details {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .free-plan-price-section {
+      width: 100%;
+    }
+  }
+  
